@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   font-family: "Gowun Batang";
   font-weight: 400;
@@ -93,6 +94,7 @@ body main {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
+  overflow: hidden;
 }
 body main .wrap {
   display: flex;
@@ -108,7 +110,7 @@ body main .wrap #title {
 body main .wrap #title h1 {
   font-family: "Abril Fatface";
   padding: 300px 0 120px 0;
-  font-size: 120px;
+  font-size: 7.5rem;
 }
 body main .wrap #title span {
   font-weight: 700;
@@ -134,75 +136,165 @@ body main .wrap #title p {
   padding-top: 40px;
   line-height: 150%;
 }
-body main .wrap #itsme {
-  margin: 0 auto;
-}
-body main .wrap #itsme #about {
+body main .wrap #about {
   width: 100%;
   padding-left: 90px;
+}
+body main .wrap #about .about_wrap {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: flex-start;
+  align-items: flex-start;
 }
-body main .wrap #itsme #about #aboutme {
-  width: 40%;
-}
-body main .wrap #itsme #about #aboutme h2 {
-  margin-bottom: 30px;
+body main .wrap #about h2 {
+  margin: 150px 0 80px 90px;
   font-family: "Abril Fatface";
   font-size: 2.25rem;
 }
-body main .wrap #itsme #about #aboutme #me_text {
+body main .wrap #about #aboutme {
+  width: 40%;
+}
+body main .wrap #about #aboutme #me_text {
   text-align: center;
 }
-body main .wrap #itsme #about #aboutme #me_text p {
+body main .wrap #about #aboutme #me_text p {
   width: calc(100% - 276px);
   margin: 0 auto;
 }
-body main .wrap #itsme #about #aboutme #me_text p img {
+body main .wrap #about #aboutme #me_text p img {
   width: 100%;
 }
-body main .wrap #itsme #about #aboutme #me_text h3 {
+body main .wrap #about #aboutme #me_text h3 {
   margin: 20px 0;
   font-size: 2rem;
   font-weight: 600;
 }
-body main .wrap #itsme #about #info {
+body main .wrap #about #aboutme #me_text span {
+  font-size: 1.25rem;
+}
+body main .wrap #about #info {
   width: 100%;
   margin: 0 50px;
   display: flex;
   gap: 80px;
   flex-wrap: wrap;
 }
-body main .wrap #itsme #about #info .info_box {
+body main .wrap #about #info .info_box {
   width: calc(50% - 80px);
 }
-body main .wrap #itsme #about #info .info_box h4 {
+body main .wrap #about #info .info_box h4 {
   font-size: 2rem;
   font-weight: bold;
 }
-body main .wrap #itsme #about #info .info_box ul {
+body main .wrap #about #info .info_box ul {
   font-size: 1.25rem;
 }
-body main .wrap #itsme #about #info .info_box ul .text {
+body main .wrap #about #info .info_box ul .text {
   margin-left: 30px;
 }
-body main .wrap #itsme #about #info .info_box ul li {
+body main .wrap #about #info .info_box ul li {
   display: inline-block;
   line-height: 200%;
 }
-body main .wrap #itsme #about #info .info_box .sort {
+body main .wrap #about #info .info_box .sort {
   display: flex;
   flex-direction: column;
 }
-body main .wrap #itsme #about #info .box4 ul {
+body main .wrap #about #info .box4 ul {
   display: flex;
   gap: 50px;
   margin-top: 10px;
 }
+body main .wrap #works {
+  margin: 0 auto;
+  position: relative;
+}
 body main .wrap #works h2 {
-  margin-bottom: 30px;
+  margin: 150px 0 80px 90px;
   font-family: "Abril Fatface";
   font-size: 2.25rem;
+}
+body main .wrap #works .contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  gap: 0;
+}
+body main .wrap #works .contents .box {
+  flex: 1;
+  margin: 0 auto;
+  padding-left: 90px;
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.062745098);
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px; /* 기본 높이 유지, 내용이 많아지면 자동 확장 */
+}
+body main .wrap #works .contents .box h3 {
+  align-self: flex-end;
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 20px;
+}
+body main .wrap #works .contents .box img {
+  display: block; /* 이미지를 블록 요소로 변경 */
+  margin: 0 auto;
+  max-width: 80%;
+}
+body main .wrap #works .contents .box p {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+body main .wrap #works .contents .box .title {
+  margin-top: 80px;
+}
+body main .wrap #works .contents .box span {
+  margin: 20px 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+body main .wrap #contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* 세로 중앙 정렬 */
+  height: 100vh; /* 화면 전체 높이 */
+  margin: 0;
+}
+body main .wrap #contact h2 {
+  font-family: "Abril Fatface";
+  font-size: 7.5rem;
+}
+body main .wrap #contact ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+body main .wrap #contact ul li {
+  font-size: 2rem;
+  line-height: 200%;
+  position: relative;
+}
+body main .wrap #contact ul li #phone {
+  position: absolute;
+  left: -41px;
+  top: 10px;
+  z-index: -1;
+  width: 2.5rem;
+}
+body main .wrap #contact ul li #email {
+  position: absolute;
+  left: -48px;
+  top: 12px;
+  z-index: -1;
+  width: 2.5rem;
+}
+body main .wrap #contact ul li #name {
+  font-size: 2.5rem;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
