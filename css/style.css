@@ -226,13 +226,12 @@ body main .wrap #works .contents {
 body main .wrap #works .contents .box {
   flex: 1;
   margin: 0 auto;
-  padding-left: 90px;
   width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.062745098);
   border-bottom: none;
   display: flex;
   flex-direction: column;
-  min-height: 600px; /* 기본 높이 유지, 내용이 많아지면 자동 확장 */
+  min-height: 700px; /* 기본 높이 유지, 내용이 많아지면 자동 확장 */
 }
 body main .wrap #works .contents .box h3 {
   align-self: flex-end;
@@ -246,6 +245,7 @@ body main .wrap #works .contents .box img {
   max-width: 80%;
 }
 body main .wrap #works .contents .box p {
+  padding-left: 70px;
   font-size: 1.25rem;
   line-height: 150%;
 }
@@ -253,6 +253,7 @@ body main .wrap #works .contents .box .title {
   margin-top: 80px;
 }
 body main .wrap #works .contents .box span {
+  padding-left: 70px;
   margin: 20px 0;
   font-size: 1.75rem;
   font-weight: 600;
@@ -289,7 +290,7 @@ body main .wrap #contact ul li #phone {
 }
 body main .wrap #contact ul li #email {
   position: absolute;
-  left: -48px;
+  left: -50px;
   top: 12px;
   z-index: -1;
   width: 2.5rem;
