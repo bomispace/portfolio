@@ -17,22 +17,23 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-body header {
+
+header {
   width: 100%;
   position: fixed;
   z-index: 99;
 }
-body header .container {
+header .container {
   text-align: center;
 }
-body header .container #top {
+header .container #top {
   display: flex;
   justify-content: flex-end;
 }
-body header .container #top .none.top_box {
+header .container #top .none.top_box {
   display: none;
 }
-body header .container #top .top_box {
+header .container #top .top_box {
   width: 100%;
   max-width: 200px;
   aspect-ratio: 5/3;
@@ -43,12 +44,12 @@ body header .container #top .top_box {
   border-right: 1px solid #ffffff;
   transition: transform 0.25s ease-in-out;
 }
-body header .container #top .top_box:hover {
+header .container #top .top_box:hover {
   transform: translateY(-0.2em);
   box-shadow: 0 0.5em 0.5em -0.4em hsla(0, 0%, 5%, 0.5);
   cursor: pointer;
 }
-body header .container #top .top_box a {
+header .container #top .top_box a {
   text-decoration: none;
   color: #333333;
   font-size: 1.25rem;
@@ -57,7 +58,7 @@ body header .container #top .top_box a {
   align-items: center;
   gap: 10px;
 }
-body header .container #top .top_box a::before {
+header .container #top .top_box a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -70,11 +71,11 @@ body header .container #top .top_box a::before {
   transition: transform 0.25s ease-in-out;
   z-index: -1;
 }
-body header .container #top .top_box a:hover::before,
-body header .container #top .top_box a:focus::before {
+header .container #top .top_box a:hover::before,
+header .container #top .top_box a:focus::before {
   transform: scaleX(1);
 }
-body header .container #top .top_box a::after {
+header .container #top .top_box a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -86,37 +87,38 @@ body header .container #top .top_box a::after {
   transition: transform 0.25s ease-in-out;
   z-index: -1;
 }
-body header .container #top .top_box a:hover::after,
-body header .container #top .top_box a:focus::after {
+header .container #top .top_box a:hover::after,
+header .container #top .top_box a:focus::after {
   transform: scaleX(1);
 }
-body main {
+
+main {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
 }
-body main .wrap {
+main .wrap {
   display: flex;
   flex-direction: column;
 }
-body main .wrap .area {
+main .wrap .area {
   width: 100%;
   height: 100vh;
 }
-body main .wrap #title {
+main .wrap #title {
   text-align: center;
 }
-body main .wrap #title h1 {
+main .wrap #title h1 {
   font-family: "Abril Fatface";
   padding: 300px 0 120px 0;
   font-size: 7.5rem;
 }
-body main .wrap #title span {
+main .wrap #title span {
   font-weight: 700;
   font-size: 3rem;
 }
-body main .wrap #title .gradient-text-ani {
+main .wrap #title .gradient-text-ani {
   color: #f35626;
   background-image: linear-gradient(92deg, #f35626, #feab3a);
   -webkit-background-clip: text;
@@ -131,89 +133,89 @@ body main .wrap #title .gradient-text-ani {
     filter: hue-rotate(-1turn);
   }
 }
-body main .wrap #title p {
-  font-size: 25px;
+main .wrap #title p {
+  font-size: 2rem;
   padding-top: 40px;
   line-height: 150%;
 }
-body main .wrap #about {
+main .wrap #about {
   width: 100%;
   padding-left: 90px;
 }
-body main .wrap #about .about_wrap {
+main .wrap #about .about_wrap {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-body main .wrap #about h2 {
+main .wrap #about h2 {
   margin: 150px 0 80px 90px;
   font-family: "Abril Fatface";
   font-size: 2.25rem;
 }
-body main .wrap #about #aboutme {
+main .wrap #about #aboutme {
   width: 40%;
 }
-body main .wrap #about #aboutme #me_text {
+main .wrap #about #aboutme #me_text {
   text-align: center;
 }
-body main .wrap #about #aboutme #me_text p {
+main .wrap #about #aboutme #me_text p {
   width: calc(100% - 276px);
   margin: 0 auto;
 }
-body main .wrap #about #aboutme #me_text p img {
+main .wrap #about #aboutme #me_text p img {
   width: 100%;
 }
-body main .wrap #about #aboutme #me_text h3 {
+main .wrap #about #aboutme #me_text h3 {
   margin: 20px 0;
   font-size: 2rem;
   font-weight: 600;
 }
-body main .wrap #about #aboutme #me_text span {
+main .wrap #about #aboutme #me_text span {
   font-size: 1.25rem;
 }
-body main .wrap #about #info {
+main .wrap #about #info {
   width: 100%;
   margin: 0 50px;
   display: flex;
   gap: 80px;
   flex-wrap: wrap;
 }
-body main .wrap #about #info .info_box {
+main .wrap #about #info .info_box {
   width: calc(50% - 80px);
 }
-body main .wrap #about #info .info_box h4 {
+main .wrap #about #info .info_box h4 {
   font-size: 2rem;
   font-weight: bold;
 }
-body main .wrap #about #info .info_box ul {
+main .wrap #about #info .info_box ul {
   font-size: 1.25rem;
 }
-body main .wrap #about #info .info_box ul .text {
+main .wrap #about #info .info_box ul .text {
   margin-left: 30px;
 }
-body main .wrap #about #info .info_box ul li {
+main .wrap #about #info .info_box ul li {
   display: inline-block;
   line-height: 200%;
 }
-body main .wrap #about #info .info_box .sort {
+main .wrap #about #info .info_box .sort {
   display: flex;
   flex-direction: column;
 }
-body main .wrap #about #info .box4 ul {
+main .wrap #about #info .box4 ul {
   display: flex;
   gap: 50px;
   margin-top: 10px;
 }
-body main .wrap #works {
+main .wrap #works {
   margin: 0 auto;
   position: relative;
 }
-body main .wrap #works h2 {
+main .wrap #works h2 {
   margin: 150px 0 80px 90px;
   font-family: "Abril Fatface";
   font-size: 2.25rem;
 }
-body main .wrap #works .contents {
+main .wrap #works .contents {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -223,7 +225,7 @@ body main .wrap #works .contents {
   left: 0;
   gap: 0;
 }
-body main .wrap #works .contents .box {
+main .wrap #works .contents .box {
   flex: 1;
   margin: 0 auto;
   width: 30%;
@@ -233,32 +235,32 @@ body main .wrap #works .contents .box {
   flex-direction: column;
   min-height: 700px; /* 기본 높이 유지, 내용이 많아지면 자동 확장 */
 }
-body main .wrap #works .contents .box h3 {
+main .wrap #works .contents .box h3 {
   align-self: flex-end;
   font-size: 4rem;
   font-weight: 600;
   padding: 20px;
 }
-body main .wrap #works .contents .box img {
+main .wrap #works .contents .box img {
   display: block; /* 이미지를 블록 요소로 변경 */
   margin: 0 auto;
   max-width: 80%;
 }
-body main .wrap #works .contents .box p {
+main .wrap #works .contents .box p {
   padding-left: 70px;
   font-size: 1.25rem;
   line-height: 150%;
 }
-body main .wrap #works .contents .box .title {
+main .wrap #works .contents .box .title {
   margin-top: 80px;
 }
-body main .wrap #works .contents .box span {
+main .wrap #works .contents .box span {
   padding-left: 70px;
   margin: 20px 0;
   font-size: 1.75rem;
   font-weight: 600;
 }
-body main .wrap #contact {
+main .wrap #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -266,36 +268,79 @@ body main .wrap #contact {
   height: 100vh; /* 화면 전체 높이 */
   margin: 0;
 }
-body main .wrap #contact h2 {
+main .wrap #contact h2 {
   font-family: "Abril Fatface";
   font-size: 7.5rem;
 }
-body main .wrap #contact ul {
+main .wrap #contact ul {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
 }
-body main .wrap #contact ul li {
+main .wrap #contact ul li {
   font-size: 2rem;
   line-height: 200%;
   position: relative;
 }
-body main .wrap #contact ul li #phone {
+main .wrap #contact ul li #phone {
   position: absolute;
   left: -41px;
   top: 10px;
   z-index: -1;
   width: 2.5rem;
 }
-body main .wrap #contact ul li #email {
+main .wrap #contact ul li #email {
   position: absolute;
   left: -50px;
   top: 12px;
   z-index: -1;
   width: 2.5rem;
 }
-body main .wrap #contact ul li #name {
+main .wrap #contact ul li #name {
   font-size: 2.5rem;
   font-weight: 600;
+}
+
+/*테블릿적용*/
+/*모바일적용*/
+@media (max-width: 768px) {
+  :root {
+    font-size: 3vw;
+  }
+  main .wrap #title h1 {
+    font-size: 4.5rem;
+  }
+  main .wrap #title span {
+    font-size: 2.5rem;
+  }
+  main .wrap #title p {
+    font-size: 1.5rem;
+  }
+  main .wrap #about {
+    padding: 0;
+  }
+  main .wrap #about h2 {
+    margin: 30% 0 2.5% 5%;
+  }
+  main .wrap #about .about_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .wrap #about .about_wrap #aboutme {
+    width: 100%;
+  }
+  main .wrap #about .about_wrap #aboutme #me_text {
+    display: flex;
+    align-items: center;
+  }
+  main .wrap #about .about_wrap #aboutme #me_text p {
+    display: block;
+    width: 30%;
+  }
+  main .wrap #about .about_wrap #aboutme #me_text h3 {
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
