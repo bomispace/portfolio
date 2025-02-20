@@ -266,8 +266,8 @@ main .wrap #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; /* 세로 중앙 정렬 */
-  height: 100vh; /* 화면 전체 높이 */
+  align-items: center;
+  height: 100vh;
   margin: 0;
 }
 main .wrap #contact h2 {
@@ -284,6 +284,10 @@ main .wrap #contact ul li {
   font-size: 2rem;
   line-height: 200%;
   position: relative;
+}
+main .wrap #contact ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 main .wrap #contact ul li #phone {
   position: absolute;
