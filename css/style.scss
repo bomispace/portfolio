@@ -129,7 +129,8 @@ body{
                 & .sort{display: flex; flex-direction: column;}
             }//.info_box
             .box4{
-                ul{display: flex; gap:50px; margin-top: 10px;}
+                li{float: left; margin-right: 50px;}
+                li:nth-child(5){clear: both;}
             }
         }//#info
     }//#about 
@@ -197,7 +198,7 @@ body{
             }//#title
             #about{ 
                 padding:0;
-                h2{margin: 30% 0 2.5% 5%;}
+                h2{margin: 25% 0 2.5% 5%;}
                 .about_wrap {display: flex; flex-direction: column; justify-content: space-between;
                     #aboutme{width: 100%;  
                         #me_text{display: flex; align-items: center; justify-content: space-evenly;
@@ -207,7 +208,21 @@ body{
                         }//#me_text
                     }//#aboutme
                     #info{
-                        margin: 0;
+                        margin: 0 20px; display: flex; flex-direction: column;
+                        gap:0;
+                        .info_box{width: 100%; margin-top: 4%;
+                            h4{font-size: 1.5rem;}
+                            .box1{display: flex;}
+                            &.box2{
+                                .sort{display: flex; flex-direction: row; gap:30px;}
+                            }//.box2
+                            &.box4{
+                                    li{width: calc(100% / 7 - 13px); margin-right: 10px;
+                                    img{width: 100%;}}
+                                    li:nth-child(5){clear: none;}
+                      
+                            }//.box4
+                        }//.info_box
                     }//#info
                 }//.about_wrap
 
