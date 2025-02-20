@@ -423,4 +423,7 @@ main .wrap #contact ul li #name {
     margin: 2% 0;
     font-size: 1.25rem;
   }
+  main .wrap #contact h2 {
+    font-size: 4.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
