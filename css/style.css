@@ -349,4 +349,7 @@ main .wrap #contact ul li #name {
   main .wrap #about .about_wrap #aboutme #me_text h3 {
     font-size: 1.5rem;
   }
+  main .wrap #about .about_wrap #info {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
