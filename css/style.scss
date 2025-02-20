@@ -223,12 +223,26 @@ body{
                                     li{width: calc(100% / 7 - 13px); margin-right: 10px;
                                     img{width: 100%;}}
                                     li:nth-child(5){clear: none;}
-                      
                             }//.box4
                         }//.info_box
                     }//#info
                 }//.about_wrap
-
         }//#about
+        #works{ clear:both;
+            padding:0;
+            h2{margin: 25% 0 2.5% 5%; font-size: 2rem;}
+            .contents{
+                position: relative; min-height: unset;
+                display: flex; flex-direction: column;
+                .box{width: 100%; border: 1px solid rgba(0, 0, 0, 0.062745098); min-height: unset;
+                    h3{font-size: 1.5rem; padding: 0 5%;}
+                    a{margin: 0 auto; width: 50%;}
+                    .title{margin-top: 1%;}
+                    p{font-size: 1rem;}
+                    span{margin: 2% 0; font-size: 1.25rem;}
+
+                }
+            }//.contents
+        }//#works
     }//.wrap
 }
