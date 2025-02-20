@@ -204,7 +204,7 @@ body{
                         #me_text{display: flex; align-items: center; justify-content: space-evenly;
                             p{display: block; width: 30%; margin:0;}
                             div{display: flex; flex-direction: column; justify-content: center;}
-                            h3{ font-size: 1.5rem;}
+                            h3{font-size: 1.5rem;}
                         }//#me_text
                     }//#aboutme
                     #info{
@@ -213,7 +213,7 @@ body{
                         .info_box{width: 100%; margin-top: 2%;
                             h4{font-size: 1.5rem;}
                             ul{
-                                li{line-height: 150%;}
+                                li{line-height: 180%;}
                             }
                             .box1{display: flex;}
                             &.box2{
