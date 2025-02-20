@@ -334,13 +334,19 @@ main .wrap #contact ul li #name {
   main .wrap #about .about_wrap #aboutme #me_text {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
   }
   main .wrap #about .about_wrap #aboutme #me_text p {
     display: block;
     width: 30%;
+    margin: 0;
+  }
+  main .wrap #about .about_wrap #aboutme #me_text div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   main .wrap #about .about_wrap #aboutme #me_text h3 {
-    margin: 0 auto;
     font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

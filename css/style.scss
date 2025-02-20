@@ -200,9 +200,10 @@ body{
                 h2{margin: 30% 0 2.5% 5%;}
                 .about_wrap {display: flex; flex-direction: column; justify-content: space-between;
                     #aboutme{width: 100%;  
-                        #me_text{display: flex; align-items: center;
-                            p{display: block; width: 30%;}
-                            h3{margin: 0 auto; font-size: 1.5rem;}
+                        #me_text{display: flex; align-items: center; justify-content: space-evenly;
+                            p{display: block; width: 30%; margin:0;}
+                            div{display: flex; flex-direction: column; justify-content: center;}
+                            h3{ font-size: 1.5rem;}
                         }//#me_text
                     }//#aboutme
                 }//.about_wrap
