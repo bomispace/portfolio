@@ -324,6 +324,7 @@ main .wrap #contact ul li #name {
   }
   main .wrap #about h2 {
     margin: 25% 0 2.5% 5%;
+    font-size: 2rem;
   }
   main .wrap #about .about_wrap {
     display: flex;
@@ -363,6 +364,9 @@ main .wrap #contact ul li #name {
   }
   main .wrap #about .about_wrap #info .info_box h4 {
     font-size: 1.5rem;
+  }
+  main .wrap #about .about_wrap #info .info_box ul li {
+    line-height: 180%;
   }
   main .wrap #about .about_wrap #info .info_box .box1 {
     display: flex;

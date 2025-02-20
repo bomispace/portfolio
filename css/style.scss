@@ -198,7 +198,7 @@ body{
             }//#title
             #about{ 
                 padding:0;
-                h2{margin: 25% 0 2.5% 5%;}
+                h2{margin: 25% 0 2.5% 5%; font-size: 2rem;}
                 .about_wrap {display: flex; flex-direction: column; justify-content: space-between;
                     #aboutme{width: 100%;  
                         #me_text{display: flex; align-items: center; justify-content: space-evenly;
@@ -212,6 +212,9 @@ body{
                         gap:0;
                         .info_box{width: 100%; margin-top: 4%;
                             h4{font-size: 1.5rem;}
+                            ul{
+                                li{line-height: 180%;}
+                            }
                             .box1{display: flex;}
                             &.box2{
                                 .sort{display: flex; flex-direction: row; gap:30px;}
