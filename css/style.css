@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*취업해야징*/
 :root {
   font-family: "Gowun Batang";
   font-weight: 400;
@@ -148,7 +149,7 @@ main .wrap #about .about_wrap {
   align-items: flex-start;
 }
 main .wrap #about h2 {
-  margin: 150px 0 80px 90px;
+  margin: 6% 0 80px 90px;
   font-family: "Abril Fatface";
   font-size: 2.25rem;
 }
@@ -187,9 +188,6 @@ main .wrap #about #info .info_box h4 {
   font-size: 2rem;
   font-weight: bold;
 }
-main .wrap #about #info .info_box ul {
-  font-size: 1.25rem;
-}
 main .wrap #about #info .info_box ul .text {
   margin-left: 30px;
 }
@@ -203,7 +201,8 @@ main .wrap #about #info .info_box .sort {
 }
 main .wrap #about #info .box4 li {
   float: left;
-  margin-right: 50px;
+  margin-right: 6%;
+  margin-bottom: 2%;
 }
 main .wrap #about #info .box4 li:nth-child(5) {
   clear: both;
@@ -213,7 +212,7 @@ main .wrap #works {
   position: relative;
 }
 main .wrap #works h2 {
-  margin: 150px 0 80px 90px;
+  margin: 6% 0 80px 90px;
   font-family: "Abril Fatface";
   font-size: 2.25rem;
 }
@@ -235,7 +234,7 @@ main .wrap #works .contents .box {
   border-bottom: none;
   display: flex;
   flex-direction: column;
-  min-height: 700px; /* 기본 높이 유지, 내용이 많아지면 자동 확장 */
+  min-height: 650px; /* 기본 높이 유지, 내용이 많아지면 자동 확장 */
 }
 main .wrap #works .contents .box h3 {
   align-self: flex-end;
@@ -249,15 +248,17 @@ main .wrap #works .contents .box img {
   max-width: 80%;
 }
 main .wrap #works .contents .box p {
-  padding-left: 70px;
+  padding-left: 20%;
+  padding-right: 6%;
   font-size: 1.25rem;
   line-height: 150%;
+  word-break: keep-all;
 }
 main .wrap #works .contents .box .title {
   margin-top: 80px;
 }
 main .wrap #works .contents .box span {
-  padding-left: 70px;
+  padding-left: 20%;
   margin: 20px 0;
   font-size: 1.75rem;
   font-weight: 600;
